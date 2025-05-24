@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop Unificado</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>TechShop Unificado</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="carrinho.html">Carrinho</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Componentes e tecnologia num só lugar</h2>
+            <p>Encontra o melhor de cada loja com um carrinho unificado.</p>
+            <a href="produtos.html" class="btn">Explorar Produtos</a>
+        </section>
+        <section id="pesquisa">
+            <input type="text" placeholder="Pesquisar produtos..." onkeyup="pesquisarProdutos(this.value)">
+        </section>
+        <section class="produtos" id="recomendados">
+            <div class="produto">
+                <h3>Intel Core i7 13700K</h3>
+                <p>Loja: Amazon - 429,99€</p>
+                <button onclick="adicionarAoCarrinho('Intel Core i7 13700K')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <h3>ASUS RTX 4080</h3>
+                <p>Loja: PcComponentes - 1.199,00€</p>
+                <button onclick="adicionarAoCarrinho('ASUS RTX 4080')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <h3>Cooler Master 750W PSU</h3>
+                <p>Loja: Globaldata - 89,99€</p>
+                <button onclick="adicionarAoCarrinho('Cooler Master 750W PSU')">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 TechShop Simulado</p>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Corpo e estrutura */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e3e6e6;
+    color: #111;
+}
+
+header {
+    background-color: #232f3e;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #37475a, #232f3e);
+    color: white;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #febd69;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #f3a847;
+}
+
+/* Produtos */
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.produto {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 220px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.produto h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.produto button {
+    background: #ffa41c;
+    color: #111;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.produto button:hover {
+    background: #cc8500;
+}
+
+/* Carrinho */
+#lista-carrinho {
+    list-style: none;
+    padding: 20px;
+}
+
+#lista-carrinho li {
+    background: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 5px solid #ffa41c;
+}
+
+#mensagem-vazio {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Pesquisa */
+#pesquisa {
+    margin: 20px;
+    text-align: center;
+}
+
+#pesquisa input {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+footer {
+    background: #232f3e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
